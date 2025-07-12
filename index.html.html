@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique Mode Moderne</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?fashion,model') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3em;
+      z-index: 1;
+    }
+    header a {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #ff3366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      z-index: 1;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .produits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+    .produit {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .produit img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .temoignages {
+      background-color: #f1f1f1;
+      border-left: 5px solid #ff3366;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #222;
+      color: white;
+    }
+    footer a {
+      color: #ff3366;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Exprime ton style avec notre nouvelle collection</h1>
+      <a href="#produits">Découvrir la collection</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>À propos de notre marque</h2>
+    <p>Nous créons des vêtements modernes, confortables et inspirés des dernières tendances. Notre mission est d’aider chacun à affirmer son style avec originalité.</p>
+  </section>
+
+  <section id="produits">
+    <h2>Nos Produits Phare</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="https://source.unsplash.com/300x400/?clothing" alt="Produit 1">
+        <h3>Veste Chic</h3>
+        <p>59,99€</p>
+        <a href="#" style="color: #ff3366; text-decoration: underline;">Acheter maintenant</a>
+      </div>
+      <div class="produit">
+        <img src="https://source.unsplash.com/300x400/?fashion,shirt" alt="Produit 2">
+        <h3>Blouse Moderne</h3>
+        <p>39,99€</p>
+        <a href="#" style="color: #ff3366; text-decoration: underline;">Acheter maintenant</a>
+      </div>
+      <div class="produit">
+        <img src="https://source.unsplash.com/300x400/?fashion,dress" alt="Produit 3">
+        <h3>Robe Élégante</h3>
+        <p>69,99€</p>
+        <a href="#" style="color: #ff3366; text-decoration: underline;">Acheter maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Témoignages</h2>
+    <div class="temoignages">
+      <p>“Super qualité, livraison rapide et un style au top !” — <strong>Sarah</strong></p>
+    </div>
+    <div class="temoignages">
+      <p>“Je suis fan de leurs collections, c’est mon nouveau shop préféré.” — <strong>Lina</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact | FAQ | Politique de retour</p>
+    <p>
+      Suivez-nous :
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </p>
+  </footer>
+</body>
+</html>
+
